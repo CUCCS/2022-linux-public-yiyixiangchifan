@@ -21,23 +21,39 @@ Ubuntu 20.04.02 Server 64bit
 
 ​    直接输入`lsb_release -a`就可以打印发行版的具体信息，包括发行版名称、版本号、代号等。
 
+<<<<<<< HEAD
 ![lsb_local](img/lsb_local.png)
+=======
+![lsb_local](C:\Users\wxxiao\Desktop\lsb_local.png)
+>>>>>>> f79850142a88e9538efe39c9d9163cc2f83dd726
 
 #####     1.2当前Linux内核版本信息
 
 ​     在命令行直接输入`uname -a`即可查看 当前 Linux 内核版本信息。
 
+<<<<<<< HEAD
 ![uname_local](img/uname_local.png)
+=======
+![uname_local](C:\Users\wxxiao\Desktop\uname_local.png)
+>>>>>>> f79850142a88e9538efe39c9d9163cc2f83dd726
 
 #### 2.Virtualbox 安装完 Ubuntu 之后新添加的网卡如何实现系统开机自动启用和自动获取 IP？
 
 添加两块网卡，一张选择NAT模式，另一张选择仅主机模式
 
+<<<<<<< HEAD
 ![network_setting](img/network_setting.png)
 
 输入`ip a`查询当前网络情况
 
 ![ip_a](img/ip_a.png)
+=======
+![network_setting](C:\Users\wxxiao\Desktop\network_setting.png)
+
+输入`ip a`查询当前网络情况
+
+![ip_a](C:\Users\wxxiao\Desktop\ip_a.png)
+>>>>>>> f79850142a88e9538efe39c9d9163cc2f83dd726
 
 发现两块网卡都正常工作，在ubuntu20.04.02中不需要再单独配置网卡。
 
@@ -47,7 +63,11 @@ Ubuntu 20.04.02 Server 64bit
 
 在windows主机上创建一个test.txt文件作为测试，使用scp将这个文件传输到虚拟机中，使用命令`scp C:\Users\wxxiao\Desktop\test.txt cuc@192.168.56.101:/home/cuc`
 
+<<<<<<< HEAD
 ![scp_to_vm](img/scp_to_vm.png)
+=======
+![scp_to_vm](C:\Users\wxxiao\Desktop\scp_to_vm.png)
+>>>>>>> f79850142a88e9538efe39c9d9163cc2f83dd726
 
 虚拟机发送到宿主机查看要发送的文件  `cat`
 
@@ -65,13 +85,21 @@ Ubuntu 20.04.02 Server 64bit
 
 首先使用`ssh-keygen`生成公私钥，它会生成id_rsa和id_rsa.pub两个文件
 
+<<<<<<< HEAD
 ![keygen](img/keygen.png)
+=======
+![keygen](C:\Users\wxxiao\Desktop\keygen.png)
+>>>>>>> f79850142a88e9538efe39c9d9163cc2f83dd726
 
 使用ssh-copy-id命令将公钥复制到远程主机。ssh-copy-id会将公钥写到远程主机的 ~/ .ssh/authorized_key 文件中
 
 再次在git bash中输入`ssh cuc@192.168.56.101`即可实现免密登录。
 
+<<<<<<< HEAD
 ![bash_login](img/bash_login.png)
+=======
+![bash_login](C:\Users\wxxiao\Desktop\bash_login.png)
+>>>>>>> f79850142a88e9538efe39c9d9163cc2f83dd726
 
 #### 参考资料
 
